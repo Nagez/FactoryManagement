@@ -1,0 +1,17 @@
+.dynamic-table {
+    border-collapse: collapse;
+    width: 100%; /* Optional: adjust width as needed */
+  }
+  
+  .dynamic-table th,
+  .dynamic-table td {
+    border: 1px solid black; /* Solid black 1px border */
+    padding: 8px;           /* Optional: add padding for better readability */
+    text-align: left;       /* Optional: align text */
+  }
+  
+  .dynamic-table th {
+    background-color: #f2f2f2; /* Optional: Add background color to header */
+    font-weight: bold;
+  }
+  

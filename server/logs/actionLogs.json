@@ -1,0 +1,10 @@
+{
+  "actions": [
+    {
+      "userId": "1",
+      "date": "2025-01-09",
+      "maxActionsPerDay": 5,
+      "remainingActions": 99423
+    }
+  ]
+}

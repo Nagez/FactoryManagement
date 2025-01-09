@@ -24,12 +24,30 @@ export default function TopBar() {
             }}
         >
             {user ? (
-                    <Link to="/MainPage" style={{ textDecoration: "none", color: "inherit" }}>
-                        <h2 >Factory Management</h2>
-                    </Link>
-                ) : (
-                     <h2 >Factory Management</h2>
-                )}
+                <Link to="/MainPage" style={{ textDecoration: "none", color: "inherit" }}>
+                    <h2 
+                        style={{
+                            transition: "background-color 0.3s ease",
+                            padding: "5px",  // Optional: Add some padding for the background to show
+                        }}
+                        onMouseEnter={(e) => e.target.style.backgroundColor = 'rgba(0, 0, 255, 0.2)'} // Hover transparent background
+                        onMouseLeave={(e) => e.target.style.backgroundColor = ''} // Revert to no background
+                    >
+                        Factory Management
+                    </h2>
+                </Link>
+            ) : (
+                <h2 
+                    style={{
+                        transition: "background-color 0.3s ease",
+                        padding: "5px",  // Optional: Add some padding for the background to show
+                    }}
+                    onMouseEnter={(e) => e.target.style.backgroundColor = 'rgba(0, 0, 255, 0.2)'} // Hover transparent background
+                    onMouseLeave={(e) => e.target.style.backgroundColor = ''} // Revert to no background
+                >
+                    Factory Management
+                </h2>
+            )}
             {user && (
                 <div
                     style={{
